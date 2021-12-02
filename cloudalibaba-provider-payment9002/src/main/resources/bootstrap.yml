@@ -1,0 +1,27 @@
+# nacos配置
+server:
+  port: 9002
+
+spring:
+  application:
+    name: nacos-payment-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.232.130:1111 #Nacos服务注册中心地址
+        namespace: 24b3b670-c0eb-445a-af56-21e18da55f8f
+      config:
+        server-addr: 192.168.232.130:1111 #Nacos作为配置中心地址
+        file-extension: yaml #指定yaml格式的配置
+        group: DEV_PRODIDER
+        namespace: 24b3b670-c0eb-445a-af56-21e18da55f8f
+
+
+# ${spring.application.name}-${spring.profile.active}.${spring.cloud.nacos.config.file-extension}
+#nacos-config-client-dev.yaml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

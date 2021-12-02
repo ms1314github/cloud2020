@@ -1,0 +1,7 @@
+首说RestTemplate
+   提供了多种便捷访问远程http服务的方法
+   是一种简单便捷访问restful服务模板类，是spring提供的用户访问rest服务的客户端模板工具集
+
+   使用：
+   非常简单粗暴
+   （url,requestMap,ResponseBean.class）这三个参数分别代表rest请求地址，请求参数，http响应转换被转换的对象类型

@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "eureka.client.eviction-interval-timer-in-ms",
+      "type": "java.lang.String",
+      "description": "Description for eureka.client.eviction-interval-timer-in-ms."
+  }
+] }
